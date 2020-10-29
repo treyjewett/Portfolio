@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Russell Jewett Portfolio</title>
-    <meta name="description" content="A brief collection of Russell's work.">
-    <meta name="author" content="Russell Jewett">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Russell Jewett Portfolio</title>
+        <meta name="description" content="A brief collection of Russell's work.">
+        <meta name="author" content="Russell Jewett">
+    </head>
 
-<body>
-    <!-- This is building the main header and navigation buttons for exploring the page at the click of a button -->
-    <header>
-        <h1>Russell <span class="jewett">Jewett</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <!-- This is building the main header and navigation buttons for exploring the page at the click of a button -->
+        <header>
+            <h1>Russell <span class="jewett">Jewett</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#my-work">My Work</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <div id="about-me">
-            <h2>About Me</h2>
-            <img src="assets/images/Myself.jpg" id="myself"/>
-            <p>My name is Russell Jewett, and I live in Dallas, North Carolina. I graduated from UNC Charlotte in 2017 after obtaining a bachelors degree in exercise physiology.
-                I currently work for a research and development facility where knowledge regarding technology is required. I am currently attending UNC Charlotte's coding boot camp
-                in an attempt to further my understanding of applications and how to apply them to my line of work.
-            </p>
-        </div>
-        <div id="my-work">
-            <h2>My Work</h2>
-            <a href="https://treyjewett.github.io/Horiseon-Marketing/" target ="_blank"><img src="assets/images/Horiseon-project.jpg" alt="Horiseon Marketing Project" id="horiseon"/></a>
-        </div>
-        <div id="resume">
-            <h2>Resume</h2>
-        </div>
-        <div id="contact-me">
-            Contact Me
-            <p class="contact-info" id="phone">
-                Phone: (704) 577-1168
-            </p>
-            <p class="contact-info" id="email">
-                Email: rfjewett3@gmail.com
-            </p>
-            <p class="contact-info" id="github">
-                <a href="https://github.com/treyjewett" target="_blank">Github</a>
-            </p>
-            <p class="contact-info" id="linkedin">
-                <a href="https://www.linkedin.com/in/trey-jewett-20234b110" target="_blank">Linkedin</a>
-            </p>
-        </div>
-    </main>
-    <footer>
-        <h2>Created by Russell Jewett</h2>
-        <p>&copy; 2020 RFJ3, inc.</p>
-    </footer>
-</body>
+        <main>
+            <section>
+                <div class="side" id="about-me">
+                    <h2>About Me</h2>
+                    <img src="assets/images/Myself.jpg" id="myself"/>
+                </div>
+                <div class="content">
+                    <p>My name is Russell Jewett, and I live in Dallas, North Carolina. I graduated from UNC Charlotte in 2017 after obtaining a bachelors degree in exercise physiology.
+                    I currently work for a research and development facility where knowledge regarding technology is required. I am currently attending UNC Charlotte's coding boot camp
+                    in an attempt to further my understanding of applications and how to apply them to my line of work.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="side" id="my-work">
+                    <h2>My Work</h2>
+                </div>
+                <div class="content">
+                        <a href="https://treyjewett.github.io/Horiseon-Marketing/" target ="_blank"><img src="assets/images/Horiseon-project.jpg" alt="Horiseon Marketing Project" id="horiseon"/></a>
+                </div>
+            </section>
+            <section>
+                <div class="side" id="resume">
+                    <h2>Resume</h2>
+                </div>
+                <div class="content">
+                </div>
+            </section>
+            <section>
+                <div class="side" id="contact-me">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>(704) 577-1168</li>
+                        <li>rfjewett3@gmail.com</li>
+                        <li id="link"><a href="https://github.com/treyjewett" target="_blank">Github</a></li>
+                        <li id="link"><a href="https://www.linkedin.com/in/trey-jewett-20234b110" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Created by Russell Jewett</h2>
+                <p>&copy; 2020 RFJ3, inc.</p>
+        </footer>
+    </body>
 </html>
