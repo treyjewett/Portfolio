@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Russell Jewett Portfolio</title>
     <meta name="description" content="A brief collection of Russell's work.">
@@ -11,39 +12,33 @@
 
 <body>
     <!-- This is building the main header and navigation buttons for exploring the page at the click of a button -->
-    <div class="header">
+    <header>
         <h1>Russell <span class="jewett">Jewett</span></h1>
-        <div>
+        <nav>
             <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-work">My Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="nav">
+    <main>
         <div id="about-me">
             <h2>About Me</h2>
-            <p>My name is Russell Jewett, and I live in Charlotte, North Carolina. I graduated from UNC Charlotte in 2017 after obtaining a bachelors degree in exercise physiology.
+            <img src="assets/images/Myself.jpg" id="myself"/>
+            <p>My name is Russell Jewett, and I live in Dallas, North Carolina. I graduated from UNC Charlotte in 2017 after obtaining a bachelors degree in exercise physiology.
                 I currently work for a research and development facility where knowledge regarding technology is required. I am currently attending UNC Charlotte's coding boot camp
                 in an attempt to further my understanding of applications and how to apply them to my line of work.
             </p>
         </div>
         <div id="my-work">
             <h2>My Work</h2>
+            <a href="https://treyjewett.github.io/Horiseon-Marketing/" target ="_blank"><img src="assets/images/Horiseon-project.jpg" alt="Horiseon Marketing Project" id="horiseon"/></a>
         </div>
         <div id="resume">
-            Resume
+            <h2>Resume</h2>
         </div>
         <div id="contact-me">
             Contact Me
@@ -60,6 +55,10 @@
                 <a href="https://www.linkedin.com/in/trey-jewett-20234b110" target="_blank">Linkedin</a>
             </p>
         </div>
-    </div>
+    </main>
+    <footer>
+        <h2>Created by Russell Jewett</h2>
+        <p>&copy; 2020 RFJ3, inc.</p>
+    </footer>
 </body>
 </html>

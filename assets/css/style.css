@@ -5,26 +5,26 @@
 }
 
 body {
-    background-color: white;
+    background-color: lightblue;
 }
 
-.header {
-    padding: 20xp;
+header {
+    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: grey;
     color: black;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 50px;
 }
 
-.header h1 .jewett {
-    color: darkblue;
+.jewett {
+    color: lightblue;
 }
 
-.header div {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,13 +32,20 @@ body {
     font-size: 22px;
 }
 
-.header div ul {
-    list-style-type: none;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
 }
 
-.header div ul li {
+ul li {
     display: inline-block;
     margin-left: 25px;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: lightblue;
 }
 
 a {
@@ -46,3 +53,39 @@ a {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    max-width: 1200px;
+    align-items: center;
+}
+
+main h2 {
+    flex-direction: row;
+    align-items: left;
+}
+
+main p {
+    flex-direction: row;
+    align-items: right;
+}
+
+#myself {
+    max-height: 150px;
+    max-width: 150px;
+    flex: 0 0 0;
+}
+
+#horiseon {
+    max-width: 70%;
+    max-height: 50%;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    margin-top: 15px;
+}
