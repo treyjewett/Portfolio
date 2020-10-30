@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: grey;
     color: black;
@@ -18,6 +18,7 @@ header {
 header h1 {
     display: inline-block;
     font-size: 50px;
+    padding-left: 2%;
 }
 
 .jewett {
@@ -25,8 +26,8 @@ header h1 {
 }
 
 nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 0.5%;
+    padding-right: 3%;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
@@ -40,7 +41,7 @@ nav ul {
 
 ul li {
     display: inline-block;
-    margin-left: 0px;
+    margin-left: 0%;
 }
 
 a {
@@ -56,6 +57,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 1 0 0;
+    padding: 0.5% 2%;
 }
 
 section {
@@ -63,12 +65,12 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-bottom: 15px;
+    padding-bottom: 1%;
 }
 
 .side {
     min-width: 20%;
-    padding-right: 7px;
+    padding-right: 1%;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -90,9 +92,54 @@ section {
 }
 
 .content {
-    width: 100%;
+    display: flex;
     flex-direction: row;
-    min-width: 100px;
+    padding-right: 1%;
+    flex-direction: row;
+}
+
+.work-img {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    text-align: center;
+    border: 5px solid red;
+    object-fit: contain;
+    width: 100%;
+}
+
+.work-img ul {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    object-fit: contain;
+    border: 5px solid orange;
+    width: 100%;
+}
+
+.work-img ul li {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    margin: 2% 2%;
+    opacity: 70%;
+    object-fit: contain;
+    border: 5px solid blue;
+    width: 100%;
+}
+
+.work-img ul li img {
+    display: flex;
+    object-fit: contain;
+    flex: auto;
+}
+
+.work-img ul li p {
+    margin: 0 auto;
+    z-index: 999;
+    width: 30%;
+    height: 20%;
+    border: 5px solid red;
 }
 
 .content p {
@@ -130,13 +177,16 @@ section {
     flex: 0 0 0;
 }
 
-#horiseon {
-    max-width: 70%;
-    max-height: 50%;
-}
-
 footer {
     background-color: grey;
     margin-top: 15px;
     align-items: center;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
 }
