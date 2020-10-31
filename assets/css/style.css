@@ -123,6 +123,7 @@ section {
     display: flex;
     flex-direction: row;
     flex: auto;
+    flex-wrap: wrap;
     text-align: center;
     /* border: 5px solid red; */
     object-fit: contain;
@@ -137,20 +138,38 @@ section {
     object-fit: contain;
     margin: 5px;
     /* border: 5px solid orange; */
-    width: 100%;
+    width: 300px;
+    height: 300px;
     opacity: 70%;
+    transition: transform .3s;
 }
 
 #horiseon {
     background-image: url("../../assets/images/Horiseon-project.jpg");
-    max-height: 500px;
-    min-height: 100px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
 }
 
 #python {
     background-image: url("../../assets/images/Coffee-machine.png");
-    max-height: 500px;
-    min-height: 100px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+}
+
+#code {
+    background-image: url("../../assets/images/code.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+}
+
+#languages {
+    background-image: url("../../assets/images/languages.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
 }
 
 .tile a {
@@ -183,6 +202,9 @@ section {
 
 .tile:hover {
     opacity: 100%;
+    transform:scale(1.2);
+    border: 3px solid grey;
+    z-index: 1;
 }
 
 .work ul li img {
