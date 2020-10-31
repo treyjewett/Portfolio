@@ -9,6 +9,10 @@ body {
 }
 
 header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: grey;
@@ -69,12 +73,11 @@ section {
 }
 
 .side {
-    min-width: 20%;
+    width: 15%;
     padding-right: 1%;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    border-right: 3px solid black;
+    border-right: 5px solid gray;
 }
 
 .side h2 {
@@ -82,13 +85,20 @@ section {
     flex-direction: column;
     text-align: right;
     font-size: 50px;
+    border: 5px solid red;
 }
 
 .side img {
     display: block;
     margin-left: auto;
     margin-right: 0;
-    width: 65%;
+    max-width: 250px;
+}
+
+.myself {
+    max-height: 100%;
+    max-width: auto;
+    flex: 0 0 0;
 }
 
 .content {
@@ -96,6 +106,15 @@ section {
     flex-direction: row;
     padding-right: 1%;
     flex-direction: row;
+    width: 100%;
+}
+
+.content p {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
 }
 
 .work-img {
@@ -105,7 +124,7 @@ section {
     text-align: center;
     border: 5px solid red;
     object-fit: contain;
-    width: 100%;
+    width: 72%;
 }
 
 .work-img ul {
@@ -128,10 +147,19 @@ section {
     width: 100%;
 }
 
+.work-img ul li:hover {
+    opacity: 100%;
+}
+
 .work-img ul li img {
     display: flex;
     object-fit: contain;
     flex: auto;
+}
+
+.thumbnail {
+    max-width: 500px;
+    height: auto;
 }
 
 .work-img ul li p {
@@ -140,14 +168,6 @@ section {
     width: 30%;
     height: 20%;
     border: 5px solid red;
-}
-
-.content p {
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    text-align: center;
 }
 
 .content a:hover {
@@ -171,13 +191,11 @@ section {
     margin-right: auto;
 }
 
-#myself {
-    max-height: 300px;
-    max-width: 300px;
-    flex: 0 0 0;
-}
-
 footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: grey;
     margin-top: 15px;
     align-items: center;
