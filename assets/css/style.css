@@ -59,16 +59,6 @@ nav a:hover {
     color: lightblue;
 }
 
-/* Setting the entire page to flex so that items can react to smaller screen sizes. */
-/* The flex direction for it's immediate child is column, so the infomation flows down the page, not across it. */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 0 0;
-    padding: 0.5% 2%;
-}
-
 /* Formatting the decorative banner under the header. */
 .sub-header {
     display: block;
@@ -94,6 +84,16 @@ main {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+}
+
+/* Setting the entire page to flex so that items can react to smaller screen sizes. */
+/* The flex direction for it's immediate child is column, so the infomation flows down the page, not across it. */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 0;
+    padding: 0.5% 2%;
 }
 
 /* Formatting for the  */
