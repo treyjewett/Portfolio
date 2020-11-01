@@ -12,7 +12,6 @@ body {
 header {
     width: 100%;
     padding: 2%;
-    margin-bottom: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: grey;
     color: black;
@@ -31,7 +30,8 @@ header h1 {
 
 /* Formatting the navigation bar so that it is spaced evenly and ensures it is readable. */
 nav {
-    padding-top: 0.5%;
+    padding-top: 1%;
+    padding-bottom: 2px;
     padding-right: 3%;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -146,7 +146,6 @@ section {
     flex-direction: row;
     width: 80%;
     padding-left: 2%;
-    justify-content: space-evenly;
 }
 
 .content p {
@@ -264,8 +263,9 @@ section {
 .content ul {
     display: flex;
     flex-wrap: nowrap;
-    width: 75%;
+    width: 80%;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .content ul li {
@@ -285,7 +285,7 @@ section {
 
 /* Adding padding to the top of the list to make closer to centered vertically. */
 #contact {
-    padding-top: 1.5%;
+    padding-top: 1.0%;
 }
 
 /* Formatting the footer to make sure it is the full width of the page. */
@@ -315,9 +315,18 @@ footer p {
     }
 }
 
+/* Changing the flex direction to column for the contact information when resized. */
 @media screen and (max-width: 950px) {
     .content ul {
         flex-direction: column;
+        column-width: 50%;
+    }
+}
+
+/* Adjusting the header padding to show nav items once resized. */
+@media screen and (max-width: 950px) {
+    header {
+        padding-bottom: 10%;
     }
 }
 
