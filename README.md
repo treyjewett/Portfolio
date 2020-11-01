@@ -4,7 +4,7 @@
 
 As an aspiring developer, it is crucial that my skills are put on display for potential employers to see my work. One of the best ways to do that is to create a website that show-cases projects that took the most skill, or something that stands out among others. Herein lies the project: Create a website that houses skills learned through the UNC Charlotte Bootcamp so that employers will have a good idea of what I am capable of.
 
-## The Portfolio
+## The Website
 
 <p align="center">
 <img src="assets\images\Portfolio-1.png" alt="Portfolio Website 1">
@@ -12,11 +12,11 @@ As an aspiring developer, it is crucial that my skills are put on display for po
 <img src="assets\images\Portfolio-3.png" alt="Portfolio Website 3">
 </p>
 
-## Code utilized
+## Code Utilized
 
 This portfolio was made ustilizing HTML and CSS. Pseudo elements were used to aid in some of of the effects on the list items and work images. Media queries were utilized to help create a responsive layout.
 
-## The Portfolio
+## What To Expect
 
 When the portfolio is loaded:
 - A header presents my name as well as navigation for the page.
