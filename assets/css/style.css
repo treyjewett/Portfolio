@@ -1,19 +1,18 @@
 * {
     box-sizing: border-box;
-    padding: 2px;
     margin: 0;
 }
 
+/* Setting the background of the whole page to light blue. */
 body {
     background-color: lightblue;
 }
 
+/* Ensuring the header is the full width of the page as well as setting the font. */
 header {
-    position: relative;
-    left: 0;
-    top: 0;
     width: 100%;
     padding: 2%;
+    margin-bottom: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: grey;
     color: black;
@@ -25,10 +24,12 @@ header h1 {
     padding-left: 2%;
 }
 
+/* Formatting for the special coloring of "Jewett". */
 .jewett {
     color: lightblue;
 }
 
+/* Formatting the navigation bar so that it is spaced evenly and ensures it is readable. */
 nav {
     padding-top: 0.5%;
     padding-right: 3%;
@@ -48,14 +49,18 @@ ul li {
     margin-left: 0%;
 }
 
+/* Setting the color for the text of the navigation buttons. */
 a {
     color: black;
 }
 
+/* When the mouse is over one of the navigation buttons, it will turn light blue. */
 nav a:hover {
     color: lightblue;
 }
 
+/* Setting the entire page to flex so that items can react to smaller screen sizes. */
+/* The flex direction for it's immediate child is column, so the infomation flows down the page, not across it. */
 main {
     display: flex;
     flex-direction: column;
@@ -64,6 +69,34 @@ main {
     padding: 0.5% 2%;
 }
 
+/* Formatting the decorative banner under the header. */
+.sub-header {
+    display: block;
+    background-image: url(../../assets/images/sub-header.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 125px;
+}
+
+.sub-header-text {
+    background-color: lightblue;
+    width: 20%;
+    bottom: 0;
+    margin-bottom: 0.25%;
+    right: 0;
+    margin-right: 0.25%;
+    position: absolute;
+}
+
+.sub-header-text p {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Formatting for the  */
 section {
     font-size: 14px;
     display: flex;
@@ -72,6 +105,7 @@ section {
     padding-bottom: 1%;
 }
 
+/* Fomatting the "side" where the titles for each section of information are. */
 .side {
     width: 15%;
     padding-right: 1%;
@@ -80,27 +114,31 @@ section {
     border-right: 5px solid gray;
 }
 
+/* Setting the header to flex so smaller resolutions will cause the titles to wrap with a media query. */
 .side h2 {
     display: flex;
     flex-direction: column;
     text-align: right;
-    font-size: 50px;
+    font-size: 250%;
     width: 100%;
 }
 
+/* Editing the image container to remain correctly sized under the h2 title. */
 .side img {
     display: block;
     margin-left: auto;
     margin-right: 0;
-    max-width: 250px;
+    max-width: 100%;
 }
 
+/* Formatting the image directly. */
 .myself {
-    max-height: 100%;
+    max-height: 300px;
     max-width: auto;
-    flex: 0 0 0;
+    flex: 1 1 0;
 }
 
+/* Setting the container for the content to flex and 80% of the page width. */
 .content {
     display: flex;
     flex-direction: row;
@@ -117,89 +155,104 @@ section {
     flex-wrap: wrap;
     font-size: 20px;
     text-align: center;
+    line-height: 1.5;
 }
 
+/* Outlining the area where all of the photos (tiles) will go. */
 .work {
     display: flex;
     flex-direction: row;
     flex: auto;
     flex-wrap: wrap;
     text-align: center;
-    /* border: 5px solid red; */
     object-fit: contain;
     width: 72%;
 }
 
+/* Formatting the tiles to be spaced evenly and set to flex. */
 .tile {
     display: flex;
-    flex-direction: row;
     flex: auto;
+    flex-wrap: wrap;
     position: relative;
     object-fit: contain;
-    margin: 5px;
-    /* border: 5px solid orange; */
-    width: 300px;
-    height: 300px;
+    margin: 15px;
+    width: 500px;
+    height: 500px;
     opacity: 70%;
     transition: transform .3s;
+    border: 5px solid gray;
 }
 
+/* Formatting the individual tiles to make each unique. */
 #horiseon {
     background-image: url("../../assets/images/Horiseon-project.jpg");
     background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 70%;
+    align-self: center;
 }
 
 #python {
-    background-image: url("../../assets/images/Coffee-machine.png");
+    background-image: url("../../assets/images/coffee-machine.jpg");
     background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
 }
 
 #code {
     background-image: url("../../assets/images/code.jpg");
     background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
+}
+
+#matrix {
+    background-image: url("../../assets/images/matrix.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
 }
 
 #languages {
     background-image: url("../../assets/images/languages.jpg");
     background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
 }
 
+/* Setting the opacity to 70% to make the hover pseudo-element work later. */
+/* Setting flex to allow for re-sizing on smaller screens. */
 .tile a {
     display: flex;
     flex-direction: row;
     flex: auto;
     opacity: 70%;
     object-fit: contain;
-    /* border: 5px solid blue; */
     width: 100%;
     height: 300px;
     justify-content: left;
     opacity: 100%;
 }
 
+/* Formatting the text boxes that go into each photo tile. */
 .tile-text {
     color: black;
     background-color: lightblue;
     height: 10%;
     position: absolute;
     bottom: 0;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     opacity: 100%;
 }
 
 .tile-text p {
     font-size: 30px;
     font-weight: bolder;
+    padding: 4% 0;
 }
 
+/* Adding the hover pseudo-element to hilight a tile when the mouse is over is. */
 .tile:hover {
     opacity: 100%;
     transform:scale(1.2);
@@ -207,42 +260,35 @@ section {
     z-index: 1;
 }
 
-.work ul li img {
-    display: flex;
-    object-fit: contain;
-    flex: auto;
-}
-
-.thumbnail {
-    max-width: 500px;
-    height: auto;
-}
-
-.content a:hover {
-    color: grey;
-}
-
+/* Formatting the contact me list to be evenly spaced, even when re-sized. */
 .content ul {
+    display: flex;
+    flex-wrap: nowrap;
     width: 75%;
-    list-style: none;
-    display: table;
     text-align: left;
 }
 
 .content ul li {
-    display: table-cell;
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
     font-size: 30px;
-    width: 25%;
-    float: left;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Highlighting when the mouse goes over one of the "contact me" options near the footer. */
+.content a:hover {
+    color: grey;
+}
+
+/* Adding padding to the top of the list to make closer to centered vertically. */
 #contact {
     padding-top: 1.5%;
 }
 
+/* Formatting the footer to make sure it is the full width of the page. */
 footer {
     position: relative;
     left: 0;
@@ -253,10 +299,31 @@ footer {
     align-items: center;
 }
 
+/* Aligning the header and text of the footer to center. */
 footer h2 {
     text-align: center;
 }
 
 footer p {
     text-align: center;
+}
+
+/* Formatting the media for re-organizing the content when the resolution is smaller than 950px. */
+@media screen and (max-width: 950px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .content ul {
+        flex-direction: column;
+    }
+}
+
+/* Formatting the media for re-organizing the content when the resolution is smaller than 950px. */
+@media screen and (max-width: 790px) {
+    .column {
+        width: 100%;
+    }
 }

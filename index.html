@@ -11,11 +11,13 @@
     </head>
 
     <body>
-        <!-- This is building the main header and navigation buttons for exploring the page at the click of a button -->
+        <!-- This is building the main header and navigation buttons for exploring the page at the click of a button. -->
         <header>
+            <!-- "Jewett" is in a different color than "Russell" so a span is needed for special formatting. -->
             <h1>Russell <span class="jewett">Jewett</span></h1>
             <nav>
                 <ul>
+                    <!-- This creates the nav list to aid in jumping to a topic on the page. -->
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#my-work">My Work</a></li>
                     <li><a href="#contact-me">Contact Me</a></li>
@@ -23,17 +25,32 @@
             </nav>
         </header>
 
+        <!-- This div is for the decorative banner underneath the header. -->
+        <sub-header>
+            <section class="sub-header">
+                <div class="sub-header-text"><p>Junior Software Engineer</p></div>
+            </section>
+        </sub-header>
+
         <main>
+            
             <section>
+                <!-- div class "side" is for everything on the left of the page. The h2 headers describe the content located to the right of the border. -->
                 <div class="side" id="about-me">
                     <h2>About Me</h2>
                     <img src="assets/images/Myself.jpg" class="myself"/>
                 </div>
+                <!-- div class "content contains all the detailes outlined by the h2 headers in "side". -->
                 <div class="content">
-                    <p>My name is Russell Jewett, and I live in Dallas, North Carolina. I graduated from UNC Charlotte in 2017 after obtaining a bachelors degree in exercise physiology.
-                    I currently work for a research and development facility where knowledge regarding technology is required. I am attending UNC Charlotte's coding boot camp
-                    in an attempt to further my understanding of applications and how to apply them to my line of work.
-                    
+                    <!-- A quick bio to introduce myself and why I chose to persue a full-stack certification. -->
+                    <p>Raised in Charlotte, North Carolina, I have remained close to home and I now live in Dallas, North Carolina. I graduated from UNC Charlotte in 2017 after 
+                        obtaining a bachelors degree in exercise physiology. I currently work for a research and development facility where knowledge regarding technology is required. 
+                        I am attending UNC Charlotte's coding boot camp in an attempt to further my understanding of applications and how to apply them to my line of work.
+                        When I was younger, I had always wanted to be an engineer. Playing sports throughout my childhood really gave me a passion for physiology, which is why 
+                        I chose to study that in college. Soon after graduating, I realized that the field was not for me and I have been in engineering ever since. Having worked
+                        in the field for over 3 years, I gravitated towards technology. It quickly became apparent that I needed some education in the "behind-the-scenes" systems
+                        that help technology perform. After nearly 18 months of teaching myself Python, I realized that I needed a strong foundation in order to build my education
+                        efficiently. After the bootcamp, I want to utilize my education to advance machine learning and other AI applications.
                     </p>
                 </div>
             </section>
@@ -41,7 +58,9 @@
                 <div class="side" id="my-work">
                     <h2>My Work</h2>
                 </div>
+                <!-- This section took a special class "work" because of all the excess formatting for this portion of the webpage. -->
                 <div class="work">
+                    <!-- The "tile" class is to format all of the images that showcase my work. -->
                     <div class="tile" id="horiseon">
                         <a href="https://treyjewett.github.io/Horiseon-Marketing/" target ="_blank">
                             <div class="tile-text"><p>HTML / CSS</p></div>
@@ -54,12 +73,17 @@
                     </div>
                     <div class="tile" id="code">
                         <a href="https://github.com/treyjewett/" target="_blank">
-                            <div class="tile-text"><p>More to come!</p></div>
+                            <div class="tile-text"><p>Password Generator</p></div>
+                        </a>
+                    </div>
+                    <div class="tile" id="matrix">
+                        <a href="https://github.com/treyjewett/" target="_blank">
+                            <div class="tile-text"><p>React</p></div>
                         </a>
                     </div>
                     <div class="tile" id="languages">
                         <a href="https://github.com/treyjewett/" target="_blank">
-                            <div class="tile-text"><p>More to come!</p></div>
+                            <div class="tile-text"><p>Code Quiz</p></div>
                         </a>
                     </div>
                 </div>
@@ -70,15 +94,17 @@
                 </div>
                 <div class="content" id="contact">
                     <ul>
+                        <!-- This list is to give contact information in case anyone is interested after they view my webpage. -->
                         <li>(704) 577-1168</li>
-                        <li id="link"><a href="https://github.com/treyjewett" target="_blank">Github</a></li>
-                        <li>rfjewett3@gmail.com</li>
-                        <li id="link"><a href="https://www.linkedin.com/in/trey-jewett-20234b110" target="_blank">Linkedin</a></li>
+                        <li><a href="https://github.com/treyjewett" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/trey-jewett-20234b110" target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:rfjewett3@gmail.com">rfjewett3@gmail.com</a></li>
                     </ul>
                 </div>
             </section>
         </main>
         <footer>
+            <!-- Footer to show who created the page and what year it was published. -->
             <h2>Created by Russell Jewett</h2>
                 <p>&copy; 2020 RFJ3, inc.</p>
         </footer>
