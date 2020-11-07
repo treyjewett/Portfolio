@@ -12,6 +12,8 @@ As an aspiring developer, it is crucial that my skills are put on display for po
 <img src="assets\images\Portfolio-3.png" alt="Portfolio Website 3">
 </p>
 
+<a href="https://treyjewett.github.io/Portfolio/" target="_blank">Click here to view the website!</a>
+
 ## Code Utilized
 
 This portfolio was made ustilizing HTML and CSS. Pseudo elements were used to aid in some of of the effects on the list items and work images. Media queries were utilized to help create a responsive layout.
