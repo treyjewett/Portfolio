@@ -199,8 +199,8 @@ section {
     width: 500px;
 }
 
-#code {
-    background-image: url("../../assets/images/code.jpg");
+#password-generator {
+    background-image: url("../../assets/images/password-generator.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
