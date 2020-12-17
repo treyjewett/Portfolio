@@ -184,19 +184,37 @@ section {
 }
 
 /* Formatting the individual tiles to make each unique. */
-#horiseon {
-    background-image: url("../../assets/images/Horiseon-project.jpg");
+#COVID {
+    background-image: url("../../assets/images/COVID.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 70%;
     align-self: center;
+    background-position: center top;
 }
 
-#python {
-    background-image: url("../../assets/images/coffee-machine.jpg");
+#code-quiz {
+    background-image: url("../../assets/images/code-quiz.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
+    background-position: center top;
+}
+
+#weather {
+    background-image: url("../../assets/images/weather.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-position: center top;
+}
+
+#organizer {
+    background-image: url("../../assets/images/organizer.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-position: center top;
 }
 
 #password-generator {
@@ -204,20 +222,7 @@ section {
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
-}
-
-#matrix {
-    background-image: url("../../assets/images/matrix.jpg");
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
-}
-
-#languages {
-    background-image: url("../../assets/images/languages.jpg");
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
+    background-position: center top;
 }
 
 /* Setting the opacity to 70% to make the hover pseudo-element work later. */
