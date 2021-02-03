@@ -193,8 +193,17 @@ section {
     background-position: center top;
 }
 
-#code-quiz {
-    background-image: url("../../assets/images/code-quiz.png");
+#burgerShack {
+    background-image: url("../../assets/images/BurgerShack.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    background-position: center;
+}
+
+#employee-manager {
+    background-image: url("../../assets/images/MyTeamExample.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
@@ -209,17 +218,10 @@ section {
     background-position: center top;
 }
 
-#organizer {
-    background-image: url("../../assets/images/organizer.png");
+#readme {
+    background-image: url("../../assets/images/Readme-example.png");
     background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
-    background-position: center top;
-}
-
-#password-generator {
-    background-image: url("../../assets/images/password-generator.png");
-    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     width: 500px;
     background-position: center top;
