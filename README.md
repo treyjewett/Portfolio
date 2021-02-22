@@ -8,8 +8,6 @@ As an aspiring developer, it is crucial that my skills are put on display for po
 
 <p align="center">
 <img src="assets\images\Portfolio-1.png" alt="Portfolio Website 1">
-<img src="assets\images\Portfolio-2.png" alt="Portfolio Website 2">
-<img src="assets\images\Portfolio-3.png" alt="Portfolio Website 3">
 </p>
 
 <a href="https://treyjewett.github.io/Portfolio/" target="_blank">Click here to view the website!</a>

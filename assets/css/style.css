@@ -184,11 +184,20 @@ section {
 }
 
 /* Formatting the individual tiles to make each unique. */
+#tripper {
+    background-image: url("../../assets/images/Tripper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 70%;
+    background-position: center top;
+}
+
 #COVID {
     background-image: url("../../assets/images/COVID.png");
     background-repeat: no-repeat;
     height: 500px;
-    width: 70%;
+    width: 500px;
     align-self: center;
     background-position: center top;
 }
@@ -217,16 +226,6 @@ section {
     width: 500px;
     background-position: center top;
 }
-
-#readme {
-    background-image: url("../../assets/images/Readme-example.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 500px;
-    background-position: center top;
-}
-
 /* Setting the opacity to 70% to make the hover pseudo-element work later. */
 /* Setting flex to allow for re-sizing on smaller screens. */
 .tile a {
