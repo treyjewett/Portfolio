@@ -192,8 +192,8 @@ section {
     background-position: center;
 }
 
-#workday {
-    background-image: url("../../assets/images/Workday.jpg");
+#react {
+    background-image: url("../../assets/images/website.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
