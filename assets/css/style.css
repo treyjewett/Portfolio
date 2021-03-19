@@ -198,7 +198,7 @@ section {
     height: 500px;
     width: 500px;
     align-self: center;
-    background-position: center top;
+    background-position: center bottom;
 }
 
 #fitness {
