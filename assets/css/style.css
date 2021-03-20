@@ -189,15 +189,23 @@ section {
     background-size: cover;
     height: 500px;
     width: 70%;
-    background-position: center top;
+    background-position: center;
 }
 
-#COVID {
-    background-image: url("../../assets/images/COVID.png");
+#react {
+    background-image: url("../../assets/images/website.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
     align-self: center;
+    background-position: center bottom;
+}
+
+#fitness {
+    background-image: url("../../assets/images/fitness.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
     background-position: center top;
 }
 
@@ -212,14 +220,6 @@ section {
 
 #employee-manager {
     background-image: url("../../assets/images/MyTeamExample.png");
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
-    background-position: center top;
-}
-
-#weather {
-    background-image: url("../../assets/images/weather.png");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;
