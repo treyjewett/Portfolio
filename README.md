@@ -6,9 +6,7 @@ As an aspiring developer, it is crucial that my skills are put on display for po
 
 ## The Website
 
-<p align="center">
 <img src="assets\images\Portfolio-Image.png" alt="Portfolio Website">
-</p>
 
 <a href="https://treyjewett.github.io/Portfolio/" target="_blank">Click here to view the website!</a>
 
